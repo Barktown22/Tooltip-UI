@@ -1,0 +1,65 @@
+.wrapper {
+  position: relative;
+  width: 55vw;
+  height: 30vh;
+  border: 3px solid black;
+  border-radius: 20px;
+}
+.hoverBoxWrapper {
+  display: none;
+}
+#but2:hover ~ .hoverBoxWrapper {
+  display: block;
+  position: absolute;
+  height: 50px;
+  width: 300px;
+  top: -70px;
+  right: -70px;
+  border-radius: 15px;
+  background-color: black;
+}
+.hoverBoxPoint {
+  display: none;
+}
+#but2:hover ~ .hoverBoxPoint {
+  display: block;
+  position: absolute;
+  top: -50px;
+  right: 60px;
+  height: 40px;
+  width: 40px;
+  background-color: black;
+  transform: rotate(45deg);
+}
+.hoverBoxText {
+  position: absolute;
+  color: white;
+  top: 30%;
+  right: 15%;
+}
+.textLeft {
+  position: absolute;
+  top: 30%;
+  left: 4%;
+}
+.buttonWrapper {
+  z-index: 10;
+
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 60%;
+  right: 18%;
+  gap: 10%;
+}
+#but2 {
+  z-index: 100;
+}
+span.arrow {
+  display: inline-block;
+  height: auto;
+  width: 100px;
+}
+span {
+  content: "\2192";
+}
